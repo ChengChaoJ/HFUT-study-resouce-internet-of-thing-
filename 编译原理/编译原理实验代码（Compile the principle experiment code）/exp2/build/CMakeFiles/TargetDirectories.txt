@@ -1,0 +1,3 @@
+/home/zzthhh/experiment/实验二框架/build/CMakeFiles/compiler.dir
+/home/zzthhh/experiment/实验二框架/build/CMakeFiles/edit_cache.dir
+/home/zzthhh/experiment/实验二框架/build/CMakeFiles/rebuild_cache.dir

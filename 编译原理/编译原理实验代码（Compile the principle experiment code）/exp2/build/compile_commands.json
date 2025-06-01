@@ -1,0 +1,27 @@
+[
+{
+  "directory": "/home/zzthhh/experiment/实验二框架/build",
+  "command": "/usr/bin/g++  -I/home/zzthhh/experiment/实验二框架/src -g -g -std=c++17 -O2 -o CMakeFiles/compiler.dir/src/main.cpp.o -c /home/zzthhh/experiment/实验二框架/src/main.cpp",
+  "file": "/home/zzthhh/experiment/实验二框架/src/main.cpp"
+},
+{
+  "directory": "/home/zzthhh/experiment/实验二框架/build",
+  "command": "/usr/bin/g++  -I/home/zzthhh/experiment/实验二框架/src -g -g -std=c++17 -O2 -o CMakeFiles/compiler.dir/src/parser/SyntaxAnalyse.cpp.o -c /home/zzthhh/experiment/实验二框架/src/parser/SyntaxAnalyse.cpp",
+  "file": "/home/zzthhh/experiment/实验二框架/src/parser/SyntaxAnalyse.cpp"
+},
+{
+  "directory": "/home/zzthhh/experiment/实验二框架/build",
+  "command": "/usr/bin/g++  -I/home/zzthhh/experiment/实验二框架/src -g -g -std=c++17 -O2 -o CMakeFiles/compiler.dir/src/parser/SyntaxTree.cpp.o -c /home/zzthhh/experiment/实验二框架/src/parser/SyntaxTree.cpp",
+  "file": "/home/zzthhh/experiment/实验二框架/src/parser/SyntaxTree.cpp"
+},
+{
+  "directory": "/home/zzthhh/experiment/实验二框架/build",
+  "command": "/usr/bin/g++  -I/home/zzthhh/experiment/实验二框架/src -g -g -std=c++17 -O2 -o CMakeFiles/compiler.dir/src/parser/lexer.cpp.o -c /home/zzthhh/experiment/实验二框架/src/parser/lexer.cpp",
+  "file": "/home/zzthhh/experiment/实验二框架/src/parser/lexer.cpp"
+},
+{
+  "directory": "/home/zzthhh/experiment/实验二框架/build",
+  "command": "/usr/bin/g++  -I/home/zzthhh/experiment/实验二框架/src -g -g -std=c++17 -O2 -o CMakeFiles/compiler.dir/src/parser/parser.cpp.o -c /home/zzthhh/experiment/实验二框架/src/parser/parser.cpp",
+  "file": "/home/zzthhh/experiment/实验二框架/src/parser/parser.cpp"
+}
+]
