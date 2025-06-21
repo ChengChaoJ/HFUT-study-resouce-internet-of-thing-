@@ -1,0 +1,122 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\23348\\source\\repos\\keshe\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6B59321E-1302-4991-BD50-0303159F901A}|keshe.vcxproj|C:\\Users\\23348\\source\\repos\\keshe\\5.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{6B59321E-1302-4991-BD50-0303159F901A}|keshe.vcxproj|solutionrelative:5.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B59321E-1302-4991-BD50-0303159F901A}|keshe.vcxproj|C:\\Users\\23348\\source\\repos\\keshe\\4.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{6B59321E-1302-4991-BD50-0303159F901A}|keshe.vcxproj|solutionrelative:4.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B59321E-1302-4991-BD50-0303159F901A}|keshe.vcxproj|C:\\Users\\23348\\source\\repos\\keshe\\3.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{6B59321E-1302-4991-BD50-0303159F901A}|keshe.vcxproj|solutionrelative:3.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B59321E-1302-4991-BD50-0303159F901A}|keshe.vcxproj|C:\\Users\\23348\\source\\repos\\keshe\\2.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{6B59321E-1302-4991-BD50-0303159F901A}|keshe.vcxproj|solutionrelative:2.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B59321E-1302-4991-BD50-0303159F901A}|keshe.vcxproj|C:\\Users\\23348\\source\\repos\\keshe\\keshe.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{6B59321E-1302-4991-BD50-0303159F901A}|keshe.vcxproj|solutionrelative:keshe.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B59321E-1302-4991-BD50-0303159F901A}|keshe.vcxproj|C:\\Users\\23348\\source\\repos\\keshe\\1.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{6B59321E-1302-4991-BD50-0303159F901A}|keshe.vcxproj|solutionrelative:1.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "5.txt",
+              "DocumentMoniker": "C:\\Users\\23348\\source\\repos\\keshe\\5.txt",
+              "RelativeDocumentMoniker": "5.txt",
+              "ToolTip": "C:\\Users\\23348\\source\\repos\\keshe\\5.txt",
+              "RelativeToolTip": "5.txt",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2024-06-27T12:43:29.603Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "4.txt",
+              "DocumentMoniker": "C:\\Users\\23348\\source\\repos\\keshe\\4.txt",
+              "RelativeDocumentMoniker": "4.txt",
+              "ToolTip": "C:\\Users\\23348\\source\\repos\\keshe\\4.txt",
+              "RelativeToolTip": "4.txt",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAALAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2024-06-27T12:42:46.631Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "3.txt",
+              "DocumentMoniker": "C:\\Users\\23348\\source\\repos\\keshe\\3.txt",
+              "RelativeDocumentMoniker": "3.txt",
+              "ToolTip": "C:\\Users\\23348\\source\\repos\\keshe\\3.txt",
+              "RelativeToolTip": "3.txt",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2024-06-27T12:42:06.143Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "2.txt",
+              "DocumentMoniker": "C:\\Users\\23348\\source\\repos\\keshe\\2.txt",
+              "RelativeDocumentMoniker": "2.txt",
+              "ToolTip": "C:\\Users\\23348\\source\\repos\\keshe\\2.txt",
+              "RelativeToolTip": "2.txt",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2024-06-27T12:40:49.525Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "1.txt",
+              "DocumentMoniker": "C:\\Users\\23348\\source\\repos\\keshe\\1.txt",
+              "RelativeDocumentMoniker": "1.txt",
+              "ToolTip": "C:\\Users\\23348\\source\\repos\\keshe\\1.txt",
+              "RelativeToolTip": "1.txt",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2024-06-27T12:39:00.464Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "keshe.cpp",
+              "DocumentMoniker": "C:\\Users\\23348\\source\\repos\\keshe\\keshe.cpp",
+              "RelativeDocumentMoniker": "keshe.cpp",
+              "ToolTip": "C:\\Users\\23348\\source\\repos\\keshe\\keshe.cpp",
+              "RelativeToolTip": "keshe.cpp",
+              "ViewState": "AQIAAGoAAAAAAAAAAAAiwIsAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-06-27T12:03:43.803Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

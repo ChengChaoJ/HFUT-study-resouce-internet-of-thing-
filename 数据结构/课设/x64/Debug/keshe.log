@@ -1,0 +1,4 @@
+﻿  keshe.cpp
+C:\Users\jingc\Desktop\keshe\keshe.cpp(14,22): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+C:\Users\jingc\Desktop\keshe\keshe.cpp(72,22): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  keshe.vcxproj -> C:\Users\jingc\Desktop\keshe\x64\Debug\keshe.exe

@@ -1,0 +1,8 @@
+﻿  keshe.cpp
+C:\Users\23348\source\repos\keshe\keshe.cpp(25,22): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+C:\Users\23348\source\repos\keshe\keshe.cpp(79,22): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  正在生成代码
+  Previous IPDB not found, fall back to full compilation.
+  All 372 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  已完成代码的生成
+  keshe.vcxproj -> C:\Users\23348\source\repos\keshe\x64\Release\keshe.exe

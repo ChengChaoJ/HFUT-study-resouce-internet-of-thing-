@@ -1,0 +1,140 @@
+#include <SFML/Graphics.hpp>
+#include <iostream>
+#include <vector>
+#include <cmath>
+#include <limits>
+#include <sstream>
+#include <iomanip>
+
+struct Point {
+    float x, y;
+    Point(float xCoord, float yCoord) : x(xCoord), y(yCoord) {}
+};
+
+float distance(const Point& a, const Point& b) {
+    return std::sqrt((a.x - b.x) * (a.x - b.x) + (a.y - b.y) * (a.y - b.y));
+}
+
+struct Edge {
+    int u, v;
+    float dist;
+    Edge(int u, int v, float dist) : u(u), v(v), dist(dist) {}
+    bool operator < (const Edge& e) const {
+        return dist < e.dist;
+    }
+};
+
+void primMST(std::vector<Point>& points, std::vector<Edge>& result) {
+    int n = points.size();
+    std::vector<float> min_e(n, std::numeric_limits<float>::max());
+    std::vector<int> sel_e(n, -1);
+    std::vector<bool> used(n, false);
+    min_e[0] = 0;
+
+    for (int i = 0; i < n; ++i) {
+        int v = -1;
+        for (int j = 0; j < n; ++j) {
+            if (!used[j] && (v == -1 || min_e[j] < min_e[v]))
+                v = j;
+        }
+
+        used[v] = true;
+        if (sel_e[v] != -1)
+            result.push_back(Edge(sel_e[v], v, min_e[v]));
+
+        for (int to = 0; to < n; ++to) {
+            float dist = distance(points[v], points[to]);
+            if (dist < min_e[to] && !used[to]) {
+                min_e[to] = dist;
+                sel_e[to] = v;
+            }
+        }
+    }
+}
+int main() {
+    sf::RenderWindow window(sf::VideoMode(800, 600), "Network Optimization");
+    sf::Font font;
+    if (!font.loadFromFile("C:\\Windows\\Fonts\\arial.ttf")) {
+        std::cout << "Could not load font\n";
+        return 1;
+    }
+
+    std::vector<Point> points;
+    std::vector<Edge> edges;
+    std::string input;
+    bool enterPressed = false;
+
+    sf::Text text("", font, 20);
+    text.setFillColor(sf::Color::White);
+    std::string inputBuffer;
+
+    while (window.isOpen()) {
+        sf::Event event;
+        while (window.pollEvent(event)) {
+            if (event.type == sf::Event::Closed)
+                window.close();
+            else if (event.type == sf::Event::TextEntered) {
+                if (event.text.unicode == '\b') {
+                    if (!inputBuffer.empty()) {
+                        inputBuffer.pop_back();
+                    }
+                }
+                else if (event.text.unicode < 128) {
+                    inputBuffer += static_cast<char>(event.text.unicode);
+                }
+            }
+            else if (event.type == sf::Event::KeyPressed && event.key.code == sf::Keyboard::Enter) {
+                enterPressed = true;
+                std::istringstream ss(inputBuffer);
+                int count;
+                ss >> count; // 首先读入点的数量
+                float x, y;
+                points.clear();
+                for (int i = 0; i < count; i++) {
+                    ss >> x >> y;
+                    points.emplace_back(x, y);
+                }
+                edges.clear();
+                primMST(points, edges);
+            }
+        }
+
+        window.clear(sf::Color::Black);
+        for (const auto& edge : edges) {
+            sf::Vertex line[] = {
+                sf::Vertex(sf::Vector2f(points[edge.u].x, points[edge.u].y), sf::Color::Red),
+                sf::Vertex(sf::Vector2f(points[edge.v].x, points[edge.v].y), sf::Color::Red)
+            };
+            window.draw(line, 2, sf::Lines);
+
+            std::stringstream ss;
+            ss << std::fixed << std::setprecision(2) << edge.dist;
+            sf::Text distText(ss.str(), font, 15);
+            distText.setPosition((points[edge.u].x + points[edge.v].x) / 2, (points[edge.u].y + points[edge.v].y) / 2);
+            distText.setFillColor(sf::Color::Cyan);
+            window.draw(distText);
+        }
+
+        for (const auto& point : points) {
+            sf::CircleShape circle(5);
+            circle.setPosition(point.x - 5, point.y - 5);
+            circle.setFillColor(sf::Color::Green);
+            window.draw(circle);
+
+            std::stringstream ss;
+            ss << "(" << point.x << ", " << point.y << ")";
+            sf::Text coordText(ss.str(), font, 15);
+            coordText.setPosition(point.x + 10, point.y - 5);
+            coordText.setFillColor(sf::Color::White);
+            window.draw(coordText);
+        }
+
+        text.setString("Enter points: " + inputBuffer);
+        text.setPosition(10, 10);
+        window.draw(text);
+
+        window.display();
+    }
+
+    return 0;
+}

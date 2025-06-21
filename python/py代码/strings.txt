@@ -1,0 +1,5 @@
+Hello, World!
+Python is great.
+File handling in Python.
+Let's count strings.
+Goodbye!
